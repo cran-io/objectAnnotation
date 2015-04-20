@@ -1,8 +1,9 @@
-### Compiling ###
+### Compiling
 
 In order to compile the image annotation tool you need Qt (http://qt.nokia.com/) version 4 and optionally (for extraction of images) the OpenCV library (recent version 2 is working fine) and Boost. This tool has not been tested so far under Windows, nevertheless, it should be compilable there, as well.
 
-### Dependencies ###
+### Dependencies
+
 ```sh
 $ brew install boost
 $ brew install qt
@@ -18,7 +19,7 @@ Once you have installed Qt (and maybe mingw on windows ... see http://www.mingw.
 
 NOTE: Very important. To compile this you neeq QT and BOOST. brew install qt // brew install boost
 
-### Compiling without OpenCV support ###
+### Compiling without OpenCV support
 
 If you have problems with OpenCV support, you can also disable OpenCV support. Do this by modifying the project file imgAnnotation.pro in line 3. Simply remove the '#' sign from the beginning of the line:
 
@@ -27,7 +28,7 @@ DEFINES += NO_OPENCV
 This will disable OpenCV support. You then can compile the program which is now dependent only on Qt. 
 
 
-### Some information about the tool ###
+### Some information about the tool
 
 The features of this tool are as follows:
 * annotation of objects with bounding boxes
